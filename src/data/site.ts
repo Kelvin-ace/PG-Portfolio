@@ -6,6 +6,17 @@ export const site = {
   email: 'info@promisegeorge.online',
   biography: "I'm Promise George, a business owner and entrepreneur passionate about creating brands that add real value to people's lives. Through The Phone George LTD, I own and operate Phone George and George Apparels, delivering quality products and services in tech and fashion.",
   mission: 'My mission is to build sustainable brands, create opportunities, and inspire the next generation of entrepreneurs.',
+  skills: [
+    'Business intelligence',
+    'Leadership',
+    'Effective communication',
+    'Decision making',
+    'Strategic thinking',
+    'Time management',
+    'Problem Solving',
+    'Infrastructure and Security',
+    'Research and development',
+  ],
   highlights: [
     { value: 'Phones & Tech', label: 'Gadgets for everyday life' },
     { value: 'Style & Streetwear', label: 'Clothing, shoes and bags' },
