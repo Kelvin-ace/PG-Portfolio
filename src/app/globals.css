@@ -74,6 +74,58 @@
 .skills-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;margin:0;padding:0}
 .skills-list li{position:relative;padding:13px 12px 13px 24px;border:1px solid #e6e1d6;border-radius:10px;background:linear-gradient(145deg,#fff,#f6f3ec);color:#302e27;font-size:12px;font-weight:650;box-shadow:0 5px 14px #16120b08}
 .skills-list li:before{content:'';position:absolute;left:11px;top:50%;height:6px;width:6px;border-radius:50%;background:var(--gold-rich);transform:translateY(-50%)}
+
+/* Warm, cinematic hero treatment based on the supplied reference. */
+.hero{min-height:clamp(700px,calc(100svh - 72px),900px);padding:46px max(calc((100vw - 1280px)/2),5.5vw) 28px;align-items:center;background:#090806}
+.hero-backdrop{background:radial-gradient(ellipse at 74% 36%,rgba(210,139,48,.36),transparent 29%),radial-gradient(ellipse at 99% 12%,rgba(234,187,97,.26),transparent 23%),radial-gradient(ellipse at 48% 100%,rgba(162,100,34,.35),transparent 34%),linear-gradient(90deg,#080807 0%,rgba(8,8,7,.97) 31%,rgba(8,8,7,.52) 57%,rgba(8,8,7,.12) 100%),linear-gradient(180deg,#100d09 0%,#090807 62%,#17110a 100%)}
+.hero-backdrop:before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(226,180,38,.24) 1.5px,transparent 2px);background-size:17px 17px;mask-image:linear-gradient(90deg,#000 0%,transparent 15%,transparent 38%,#000 48%,transparent 58%,transparent 91%,#000 100%);opacity:.42}
+.hero-backdrop:after{content:"";position:absolute;top:6%;right:-3%;width:25%;height:60%;background:repeating-linear-gradient(150deg,transparent 0 40px,rgba(207,155,9,.12) 41px 70px,transparent 71px 118px);clip-path:polygon(35% 0,100% 0,100% 100%,0 68%);opacity:.7}
+.hero-copy{width:55%;max-width:650px;padding:0 0 15px}
+.hero-copy .pill{border-color:rgba(224,176,68,.42);background:rgba(255,255,255,.08);font-size:9px;padding:9px 14px;color:#f0cc61}
+.hero-copy h1{font-size:clamp(58px,6vw,92px);letter-spacing:-3px;margin:12px 0 10px;text-shadow:0 5px 32px rgba(0,0,0,.28)}
+.hero-tagline{font-size:clamp(21px,2.25vw,34px);margin-bottom:17px}
+.hero-description{max-width:560px;font-size:14px;line-height:1.8;margin-bottom:25px}
+.hero-actions .button{min-height:50px;padding-inline:24px}
+.hero-stats{width:min(100%,520px);margin-top:42px;padding-top:17px;border-color:rgba(225,185,96,.3)}
+.hero-stats div{min-width:31%;padding-inline:22px;border-color:rgba(225,185,96,.34)}
+.hero-stats strong{font:700 clamp(19px,1.8vw,27px)/1.15 var(--sans);color:#f1c13b}
+.hero-stats span{font-size:12px;color:#f0eee8;margin-top:5px}
+.hero-portrait{width:58%;height:100%;right:0;filter:drop-shadow(0 12px 45px rgba(0,0,0,.32))}
+.hero-portrait img{object-fit:contain;object-position:center bottom}
+.hero-signature{right:max(calc((100vw - 1260px)/2),6vw);bottom:42px}
+.hero-signature span{font:italic clamp(36px,4vw,58px)/1.05 "Segoe Script","Brush Script MT",cursive;transform:rotate(-5deg)}
+.hero-signature small{font-size:9px;color:#e5c16f}
+@media(max-width:900px){
+  .hero{min-height:690px;padding-inline:5vw}
+  .hero-copy{width:59%}
+  .hero-copy h1{font-size:clamp(54px,7.2vw,76px)}
+  .hero-description{max-width:460px;font-size:13px}
+  .hero-portrait{right:-5%;width:58%}
+  .hero-stats{width:100%;margin-top:32px}
+  .hero-stats div{padding-inline:14px}
+}
+@media(max-width:680px){
+  .hero{min-height:0;display:flex;flex-direction:column;align-items:stretch;padding:28px 20px 0;isolation:isolate}
+  .hero-backdrop{background:radial-gradient(ellipse at 66% 62%,rgba(174,107,39,.3),transparent 42%),radial-gradient(ellipse at 100% 8%,rgba(230,178,72,.18),transparent 27%),linear-gradient(180deg,#090807 0%,#100d09 62%,#080807 100%)}
+  .hero-backdrop:before{background-size:14px 14px;mask-image:linear-gradient(90deg,#000,transparent 28%,transparent 72%,#000);opacity:.25}
+  .hero-backdrop:after{top:43%;right:-16%;height:35%;width:45%;opacity:.45}
+  .hero-copy{width:100%;max-width:100%;padding:0;position:relative;z-index:3}
+  .hero-copy .pill{font-size:7px;gap:6px;padding:7px 9px}
+  .hero-copy h1{font-size:clamp(49px,13vw,68px);letter-spacing:-2.4px;margin:10px 0 9px}
+  .hero-tagline{font-size:19px;max-width:340px;margin-bottom:13px}
+  .hero-description{font-size:12px;line-height:1.7;margin-bottom:18px}
+  .hero-actions{gap:9px}
+  .hero-actions .button{min-height:44px;padding-inline:15px;font-size:10px}
+  .hero-stats{margin-top:24px;padding-top:12px}
+  .hero-stats div{min-width:0;flex:1;padding-inline:9px}
+  .hero-stats strong{font-size:16px}
+  .hero-stats span{font-size:8px;line-height:1.35}
+  .hero-portrait{position:relative;width:calc(100% + 40px);height:clamp(300px,88vw,410px);right:auto;bottom:auto;align-self:center;margin:0 -20px;z-index:1}
+  .hero-portrait img{object-fit:contain;object-position:center bottom}
+  .hero-signature{right:18px;bottom:16px}
+  .hero-signature span{font-size:32px}
+  .hero-signature small{font-size:7px}
+}
 @media(max-width:900px){.skills-section{grid-template-columns:1fr;gap:20px}.skills-heading>p:last-child{max-width:520px}}
 @media(max-width:680px){.skills-section{padding-top:32px;padding-bottom:48px;gap:17px}.skills-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.skills-list li{font-size:10px;padding:12px 8px 12px 20px}.skills-list li:before{left:9px;height:5px;width:5px}}
 
