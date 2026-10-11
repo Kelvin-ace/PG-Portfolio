@@ -1,0 +1,50 @@
+export const site = {
+  name: 'Promise George',
+  descriptor: 'Entrepreneur · Investor · Brand Builder',
+  title: 'Promise George | Entrepreneur & Brand Builder',
+  description: 'Discover Promise George, entrepreneur and founder of The Phone George LTD, the business behind Phone George and George Apparels.',
+  email: 'info@promisegeorge.online',
+  biography: "I'm Promise George, a business owner and entrepreneur passionate about creating brands that add real value to people's lives. Through The Phone George LTD, I own and operate Phone George and George Apparels, delivering quality products and services in tech and fashion.",
+  mission: 'My mission is to build sustainable brands, create opportunities, and inspire the next generation of entrepreneurs.',
+  highlights: [
+    { value: 'Phones & Tech', label: 'Gadgets for everyday life' },
+    { value: 'Style & Streetwear', label: 'Clothing, shoes and bags' },
+    { value: 'Useful Extras', label: 'Accessories for every day' },
+    { value: 'Two Brands', label: 'One customer-first vision' },
+  ],
+  brands: [
+    { name: 'Phone George', category: 'Quality Phones. Trusted Deals.', logo: '/images/phone-george-logo.png', image: '/images/phone-george-home.png', description: 'A destination for original smartphones, accessories and gadgets at the best prices, with a focus on quality and customer trust.', href: 'https://phonegeorge.shop' },
+    { name: 'George Apparels', category: 'Wear Confidence.', logo: '/images/george-apparels-logo.png', image: '/images/george-apparels-home.png', description: 'A fashion brand dedicated to stylish, high-quality clothing for men and women, blending comfort with modern trends.', href: 'https://georgeapparels.shop' },
+  ],
+  socials: [
+    { name: 'TikTok', handle: '@promise.george28', href: 'https://www.tiktok.com/@promise.george28', icon: 'music' },
+    { name: 'Instagram', handle: '@pg_george1', href: 'https://instagram.com/pg_george1', icon: 'instagram' },
+    { name: 'Facebook', handle: 'Promise George', href: 'https://www.facebook.com/share/1F1W5ipYGu/', icon: 'facebook' },
+    { name: 'LinkedIn', handle: 'Promise George', href: 'https://www.linkedin.com/in/promise-george-a2556b104', icon: 'linkedin' },
+  ],
+  values: [
+    { icon: '◇', title: 'Quality', text: 'Delivering the best products and services.' },
+    { icon: '♧', title: 'People', text: 'Creating value for customers and communities.' },
+    { icon: '✳', title: 'Innovation', text: 'Finding better ways to solve real problems.' },
+    { icon: '↗', title: 'Growth', text: 'Building sustainable impact for the long term.' },
+  ],
+  products: [
+    { title: 'PG Earbuds', sub: 'Pure sound for wherever you go', image: '/images/pg-earbuds.png', category: 'Phone George' },
+    { title: 'Type-C to iPhone Cable', sub: 'Fast, safe and reliable charging', image: '/images/pg-type-c-iphone-cable.png', category: 'Phone George' },
+    { title: '20,000 mAh Power Bank', sub: 'Portable power, ready for the day', image: '/images/pg-power-bank-20000mah.png', category: 'Phone George' },
+    { title: 'Move Free Shorts', sub: 'Comfort with a streetwear edge', image: '/images/move-free-shorts.png', category: 'George Apparels' },
+    { title: 'Move Free Streetwear', sub: 'Everyday pieces with personality', image: '/images/move-free-streetwear.png', category: 'George Apparels' },
+    { title: 'Move Free Apparel', sub: 'Relaxed fits, bold self-expression', image: '/images/move-free-apparel-collage.png', category: 'George Apparels' },
+    { title: 'Move Free Collection', sub: 'Casual staples made to move', image: '/images/move-free-apparel-collection.png', category: 'George Apparels' },
+    { title: 'Abstract Camo Tracksuit', sub: 'A standout coordinated look', image: '/images/george-apparels-camo-tracksuit.png', category: 'George Apparels' },
+  ],
+  milestones: [
+    { title: 'The Beginning', text: 'Started with a passion for tech and people.' },
+    { title: 'Phone George', text: 'Launched Phone George to make quality phones more accessible.' },
+    { title: 'George Apparels', text: 'Expanded into fashion with George Apparels.' },
+    { title: 'The Phone George LTD', text: 'Established the parent company to scale bigger.' },
+    { title: 'A Bigger Future', text: 'Continuing to grow, create opportunities and make an impact.' },
+  ],
+} as const;
+
+// Portfolio highlights describe the brands and their product range.
