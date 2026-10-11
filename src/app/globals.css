@@ -54,6 +54,6 @@
 @media(max-width:680px){.product-track{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin:0;padding:0;gap:10px}.product-card{min-width:0;flex:auto}.product-image{aspect-ratio:1/1}.product-label{padding:9px}.product-label h3{font-size:11px}.product-label p{font-size:9px}.product-label>span{font-size:8px}.product-carousel-status{margin-top:15px}}
 @media(prefers-reduced-motion:reduce){.product-card{animation:none}}
 .product-track{grid-template-columns:repeat(4,minmax(0,1fr))}
-.impact-card{background:linear-gradient(140deg,rgba(255,255,255,.25),rgba(255,255,255,.09) 45%,rgba(255,255,255,.14));backdrop-filter:blur(18px) saturate(155%);-webkit-backdrop-filter:blur(18px) saturate(155%);border:1px solid rgba(255,255,255,.38);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),0 14px 38px rgba(0,0,0,.27);color:#fff}
+.impact-card{background:linear-gradient(140deg,rgba(15,17,20,.88),rgba(20,22,25,.72) 45%,rgba(13,15,18,.82));backdrop-filter:blur(18px) saturate(155%);-webkit-backdrop-filter:blur(18px) saturate(155%);border:1px solid rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 14px 38px rgba(0,0,0,.38);color:#fff}
 .impact-card span{color:#f6d96f}.impact-card b{text-shadow:0 1px 8px rgba(0,0,0,.22)}
 @media(max-width:1000px){.product-track{grid-template-columns:repeat(2,minmax(0,1fr))}}
